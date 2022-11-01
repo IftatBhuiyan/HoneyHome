@@ -17,7 +17,7 @@
     "report": "open reports/report.html",
     "snippets": "cucumber-js features/**/*.feature --dry-run --format snippets",
     "steps-usage": "cucumber-js features/**/*.feature --dry-run",
-    "all": "cucumber-js features/**/*.feature",
+    "all": "features/**/*.feature",
     "test": "cucumber-js",
     "test:parallel": "cucumber-js --parallel=2",
     "docker": "docker run --rm --network host -v $(pwd):/work/ -w /work/ -it mcr.microsoft.com/playwright:latest /bin/bash",
@@ -28,29 +28,30 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tallyb/cucumber7-playwright.git"
+    "url": "git+https://github.com/IftatBhuiyan/HoneyHome"
   },
-  "author": "Tally Barak",
+  "author": "Iftat Bhuiyan",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tallyb/cucumber-playwright/issues"
+    "url": "https://github.com/IftatBhuiyan/HoneyHome/issues"
   },
-  "homepage": "https://github.com/tallyb/cucumber-playwright#readme",
+  "homepage": "https://github.com/IftatBhuiyan/HoneyHome#readme",
   "dependencies": {
     "@cucumber/cucumber": "8.7.0",
     "@cucumber/html-formatter": "20.1.0",
     "@cucumber/messages": "^19.0.0",
     "@cucumber/pretty-formatter": "1.0.0",
+    "@playwright/test": "1.27.1",
     "@types/fs-extra": "9.0.13",
     "cucumber-console-formatter": "1.0.0",
     "cucumber-html-reporter": "5.5.0",
     "pixelmatch": "5.3.0",
-    "@playwright/test": "1.27.1",
+    "playwright": "^1.27.1",
     "pngjs": "6.0.0"
   },
   "devDependencies": {
-    "@types/fs-extra": "9.0.13",
     "@types/expect": "24.3.0",
+    "@types/fs-extra": "9.0.13",
     "@types/lodash": "4.14.186",
     "@types/node": "16.18.2",
     "@types/pixelmatch": "5.2.4",
