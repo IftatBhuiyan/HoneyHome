@@ -2,7 +2,7 @@
 Feature: Playwright docs
 
   Background: Navigation
-    Given Go to the playwright website
+    Given Go to the joinhoney website
 
   Scenario: Change theme
     Given A cat fact is recieved
